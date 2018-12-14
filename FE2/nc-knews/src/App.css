@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+  color: rgba(80, 246, 2, 1);
+  background: rgba(0, 0, 0, 1);
+  height: 100%;
+  display: grid;
+  grid-template: 0.5fr 0.5fr 1.5fr 0.5fr / 1fr;
+  grid-template-areas: 'header' 'nav' 'home' 'footer';
+}
+
+.main {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 4fr 1fr / 1fr;
+  grid-template-areas: 'header' 'login' 'footer';
+}
+
+.App-header {
+  grid-area: 'header';
+  border: solid 1px rgba(80, 246, 2, 1);
+}
+
+.nav {
+  grid-area: 'header';
+  border: solid 1px rgba(255, 50, 100, 1);
+  background-color: rgba(255, 50, 100, 0.1);
+}
+
+Link {
+  font-size: 40px;
+}
+
+.Home {
+  grid-area: 'home';
+}
+
+.footer {
+  grid-area: 'footer';
+  border: solid 1px rgba(255, 50, 100, 1);
+  background-color: rgba(255, 50, 100, 0.1);
+}
+
+/* .table {
+  grid-area: 'login';
+  position: relative;
+  margin-top: 10px;
+  align-items: center;
+} */
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#topics-choice {
+  display: inline;
+}
+
+#article-form-submit {
+  grid-area: 'login';
+  position: relative;
+  margin-top: 40px;
+  align-items: center;
+} 
+
+label {
+  margin: 5px;
+}
+
+input {
+  margin: 5px;
+}
+
+.deleteButton, .voteButton {
+  color: rgba(80, 246, 2, 1);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.downVote:hover {
+  color: rgba(255, 0, 0, 1);
+}
+
+.upVote:hover {
+  color: rgb(69, 2, 90)
+}
